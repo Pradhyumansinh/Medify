@@ -4,6 +4,7 @@ import HeroSlider from "../components/HeroSlider/HeroSlider";
 import SearchHospital from "../components/SearchHospital/SearchHospital";
 import Services from "../components/Services/Services";
 import Offers from "../components/Sections/Offers/Offers";
+import Specialization from "../components/Sections/Specialization/Specialization";
 
 const Home = () => {
     return (
@@ -31,6 +32,8 @@ const Home = () => {
         </Box>
 
         <Offers />
+
+        <Specialization />
 
     </Box>
     )
