@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import { createTheme, ThemeProvider } from "@mui/material";
 import Home from './Home/Home';
 import Search from './Search/Search';
+import MyBookings from './MyBookings/MyBookings';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "search",
         element: <Search />,
+      },
+      {
+        path: "my-bookings",
+        element: <MyBookings />,
       }
     ],
   },
