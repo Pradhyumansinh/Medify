@@ -3,6 +3,7 @@ import NavBar from "../components/NavBar/NavBar";
 import HeroSlider from "../components/HeroSlider/HeroSlider";
 import SearchHospital from "../components/SearchHospital/SearchHospital";
 import Services from "../components/Services/Services";
+import Offers from "../components/Sections/Offers/Offers";
 
 const Home = () => {
     return (
@@ -28,6 +29,8 @@ const Home = () => {
             </Container>
 
         </Box>
+
+        <Offers />
 
     </Box>
     )

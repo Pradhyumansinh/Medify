@@ -41,7 +41,7 @@ const SearchHospital = () => {
           }
         };
     
-        if (formData.state != "") {
+        if (formData.state !== "") {
           fetchCities();
         }
       }, [formData.state]);
