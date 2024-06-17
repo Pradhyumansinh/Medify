@@ -6,6 +6,7 @@ import Services from "../components/Services/Services";
 import Offers from "../components/Sections/Offers/Offers";
 import Specialization from "../components/Sections/Specialization/Specialization";
 import Specialists from "../components/Sections/Specialists/Specialists";
+import PatientCarring from "../components/Sections/PatientCaring/PatientCaring";
 
 const Home = () => {
     return (
@@ -35,6 +36,7 @@ const Home = () => {
         <Offers />
         <Specialization />
         <Specialists />
+        <PatientCarring />
     </Box>
     )
 }
