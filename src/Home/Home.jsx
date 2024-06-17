@@ -1,6 +1,7 @@
 import { Container, Box, Stack } from "@mui/material";
 import NavBar from "../components/NavBar/NavBar";
 import HeroSlider from "../components/HeroSlider/HeroSlider";
+import SearchHospital from "../components/SearchHospital/SearchHospital";
 
 const Home = () => {
     return (
@@ -10,7 +11,18 @@ const Home = () => {
 
             <Container maxWidth="xl">
                 <HeroSlider />
-                
+                <Stack
+                    p={{ xs: 2.5, md: 8 }}
+                    mt={{ xs: -2, md: 0, lg: -6, xl: -10 }}
+                    position="relative"
+                    zIndex={99}
+                    bgcolor="#fff"
+                    borderRadius="15px"
+                    spacing={10}
+                    boxShadow="0 0 12px rgba(0,0,0,0.1)"
+                >
+                    <SearchHospital />
+                </Stack>
             </Container>
 
         </Box>
