@@ -2,6 +2,7 @@ import { Container, Box, Stack } from "@mui/material";
 import NavBar from "../components/NavBar/NavBar";
 import HeroSlider from "../components/HeroSlider/HeroSlider";
 import SearchHospital from "../components/SearchHospital/SearchHospital";
+import Services from "../components/Services/Services";
 
 const Home = () => {
     return (
@@ -22,6 +23,7 @@ const Home = () => {
                     boxShadow="0 0 12px rgba(0,0,0,0.1)"
                 >
                     <SearchHospital />
+                    <Services />
                 </Stack>
             </Container>
 

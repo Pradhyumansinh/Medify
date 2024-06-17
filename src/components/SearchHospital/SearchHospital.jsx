@@ -69,12 +69,7 @@ const SearchHospital = () => {
             flexDirection: { xs: "column", md: "row" },
         }}
         >
-            <Select
-                displayEmpty
-                id="state"
-                name="state"
-                value={formData.state}
-                onChange={handleChange}
+            <Select displayEmpty id="state" name="state" value={formData.state} onChange={handleChange}
                 startAdornment={
                 <InputAdornment position="start">
                     <SearchIcon />
@@ -93,12 +88,7 @@ const SearchHospital = () => {
                 ))}
             </Select>
 
-            <Select
-                displayEmpty
-                id="city"
-                name="city"
-                value={formData.city}
-                onChange={handleChange}
+            <Select displayEmpty id="city" name="city" value={formData.city} onChange={handleChange}
                 startAdornment={
                 <InputAdornment position="start">
                     <SearchIcon />
@@ -117,11 +107,7 @@ const SearchHospital = () => {
                 ))}
             </Select>
 
-            <Button
-                type="submit"
-                variant="contained"
-                size="large"
-                startIcon={<SearchIcon />}
+            <Button type="submit" variant="contained" size="large" startIcon={<SearchIcon />}
                 sx={{ py: "15px", px: 8, flexShrink: 0 }}
                 disableElevation
             >
