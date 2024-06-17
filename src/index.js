@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import { createTheme, ThemeProvider } from "@mui/material";
 import Home from './Home/Home';
+import Search from './Search/Search';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
+      {
+        path: "search",
+        element: <Search />,
+      }
     ],
   },
 ]);
