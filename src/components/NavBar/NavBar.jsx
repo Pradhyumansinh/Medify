@@ -55,7 +55,26 @@ import MenuIcon from "@mui/icons-material/Menu";
                             My Bookings
                         </Button>
                         </Link>
+
+                        {isMobile && (
+                        <IconButton
+                            onClick={() => setMenuOpen(false)}
+                            sx={{
+                            position: "absolute",
+                            top: 0,
+                            right: 32,
+                            color: "#fff",
+                            }}
+                        >
+                            <CloseIcon />
+                        </IconButton>
+                        )}
                     </Stack>
+                    {isMobile && (
+                        <IconButton onClick={() => setMenuOpen(true)}>
+                            <MenuIcon />
+                        </IconButton>
+                    )}
                 </Stack>
             </Container>
         </header>
